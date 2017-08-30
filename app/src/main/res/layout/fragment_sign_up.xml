@@ -1,4 +1,5 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
@@ -11,22 +12,20 @@
         tools:context="com.example.bahaaibrahim.tasteria.signUpFragment">
 
         <!-- TODO: Update blank fragment layout -->
-
-
         <TextView
             android:id="@+id/join"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
             android:layout_marginTop="36dp"
             android:fontFamily="serif"
             android:text="@string/join"
             android:textColor="@color/colorAccent"
-            android:textSize="30sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="18dp"
-            android:layout_marginStart="18dp" />
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/alreadyMem"
@@ -47,26 +46,25 @@
             android:layout_alignStart="@+id/signMailLay"
             android:layout_below="@+id/alreadyMem"
             android:layout_marginTop="20dp"
-            android:textColorHint="#FFFFFF"
-            android:gravity="center">
-
-        <EditText
-            android:id="@+id/userName"
-            android:layout_width="270dp"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/signMail"
-            android:layout_alignStart="@+id/signMail"
-            android:layout_below="@+id/alreadyMem"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@color/colorAccent"
-            android:drawableLeft="@drawable/ic_user"
-            android:drawableStart="@drawable/ic_user"
-            android:ems="10"
             android:gravity="center"
-            android:hint="@string/userName"
-            android:inputType="text"
-            android:textColorHint="@color/colorAccent"
-            android:theme="@style/editTextColor" />
+            android:textColorHint="#FFFFFF">
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/signMail"
+                android:layout_alignStart="@+id/signMail"
+                android:layout_below="@+id/alreadyMem"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorAccent"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawableStart="@drawable/ic_user"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/userName"
+                android:inputType="text"
+                android:textColorHint="@color/colorAccent" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -77,26 +75,25 @@
             android:layout_alignStart="@+id/buttonFrame"
             android:layout_below="@+id/userNameLay"
             android:layout_marginTop="10dp"
-            android:textColorHint="#FFFFFF"
-            android:gravity="center">
-
-        <EditText
-            android:id="@+id/signMail"
-            android:layout_width="270dp"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/buttonFrame"
-            android:layout_alignStart="@+id/buttonFrame"
-            android:layout_below="@+id/userNameLay"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@color/colorAccent"
-            android:drawableLeft="@drawable/ic_mail"
-            android:drawableStart="@drawable/ic_mail"
-            android:ems="10"
             android:gravity="center"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            android:textColorHint="@color/colorAccent"
-            android:theme="@style/editTextColor" />
+            android:textColorHint="#FFFFFF">
+
+            <EditText
+                android:id="@+id/signMail"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/buttonFrame"
+                android:layout_alignStart="@+id/buttonFrame"
+                android:layout_below="@+id/userNameLay"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorAccent"
+                android:drawableLeft="@drawable/ic_mail"
+                android:drawableStart="@drawable/ic_mail"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorAccent" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -107,13 +104,13 @@
             android:layout_alignStart="@+id/signMailLay"
             android:layout_below="@+id/signMailLay"
             android:layout_marginTop="10dp"
-            android:textColorHint="#FFFFFF"
-            android:gravity="center">
+            android:gravity="center"
+            android:textColorHint="#FFFFFF">
 
 
             <EditText
                 android:id="@+id/signPass"
-                android:layout_width="270dp"
+                android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@+id/signMailLay"
                 android:layout_alignStart="@+id/signMailLay"
@@ -126,51 +123,56 @@
                 android:gravity="center"
                 android:hint="@string/signPass"
                 android:inputType="textPassword"
-                android:textColorHint="@color/colorAccent"
-                android:theme="@style/editTextColor" />
+                android:textColorHint="@color/colorAccent" />
         </android.support.design.widget.TextInputLayout>
 
 
-        <Switch
-            android:id="@+id/genderSwitch"
+        <Button
+            android:id="@+id/genderButtonMale"
             android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:checked="false"
-            android:showText="true"
-            android:text="Gender "
-            android:switchPadding="3dp"
-            android:textColor="@color/colorAccent"
-            android:textSize="18sp"
-            android:textOff="Female"
-            android:textOn="Male"
-            tools:checked="false"
-            android:layout_below="@+id/signPassLay"
+            android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/signPassLay"
             android:layout_alignStart="@+id/signPassLay"
-            android:thumb="@drawable/switchselector"
-            />
+            android:layout_below="@+id/signPassLay"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/genderbuttonmale"
+            android:gravity="center"
+            android:text="@string/genderMale"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/genderButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonFrame"
+            android:layout_toEndOf="@+id/genderButtonMale"
+            android:layout_toRightOf="@+id/genderButtonMale"
+            android:background="@drawable/genderbuttonfemale"
+            android:gravity="center"
+            android:text="@string/genderFemale"
+            android:textColor="@color/colorAccent" />
 
         <Spinner
             android:id="@+id/ageSpinner"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/genderSwitch"
+            android:layout_alignBottom="@+id/genderButtonMale"
             android:layout_alignEnd="@+id/signPassLay"
             android:layout_alignRight="@+id/signPassLay"
-            android:layout_alignTop="@+id/genderSwitch"
-             android:backgroundTint="@color/colorAccent"/>
+            android:layout_alignTop="@+id/genderButtonMale"
+            android:backgroundTint="@color/colorAccent" />
 
         <FrameLayout
             android:id="@+id/buttonFrame"
             android:layout_width="280dp"
             android:layout_height="match_parent"
             android:layout_alignBottom="@+id/signUpButton"
-            android:layout_below="@+id/genderSwitch"
+            android:layout_below="@+id/genderButtonMale"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/login_button"
-            android:orientation="vertical"
-            android:foregroundGravity="center">
+            android:foregroundGravity="center"
+            android:orientation="vertical">
 
         </FrameLayout>
 
@@ -178,15 +180,15 @@
             android:id="@+id/signUpButton"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="?actionBarItemBackground"
-            android:text="@string/signUpButton"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimaryDark"
-            android:gravity="center"
-            android:layout_below="@+id/genderSwitch"
             android:layout_alignLeft="@+id/buttonFrame"
-            android:layout_alignStart="@+id/buttonFrame" />
+            android:layout_alignStart="@+id/buttonFrame"
+            android:layout_below="@+id/genderButtonMale"
+            android:layout_marginTop="40dp"
+            android:background="?selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/signUpButton"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
 
 
     </RelativeLayout>

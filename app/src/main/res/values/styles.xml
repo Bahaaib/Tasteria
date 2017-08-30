@@ -13,9 +13,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="editTextColor" parent="@android:style/TextAppearance.Medium">
-        <item name="colorControlNormal">@color/colorAccent</item>
-    </style>
 
 
 

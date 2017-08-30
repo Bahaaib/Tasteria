@@ -15,29 +15,28 @@
         <android.support.design.widget.TextInputLayout
             android:id="@+id/emailLay"
             android:layout_width="280dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="192dp"
-            android:layout_height="wrap_content"
-            android:textColorHint="#FFFFFF"
-            android:gravity="center">
-
-        <EditText
-            android:id="@+id/userName"
-            android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="192dp"
-            android:backgroundTint="@color/colorAccent"
-            android:drawableLeft="@drawable/ic_mail"
-            android:drawableStart="@drawable/ic_mail"
-            android:ems="10"
             android:gravity="center"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            android:textColorHint="@color/colorAccent"
-            android:theme="@style/editTextColor" />
+            android:textColorHint="#FFFFFF">
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="192dp"
+                android:backgroundTint="@color/colorAccent"
+                android:drawableLeft="@drawable/ic_mail"
+                android:drawableStart="@drawable/ic_mail"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorAccent" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -48,26 +47,25 @@
             android:layout_alignStart="@+id/emailLay"
             android:layout_alignTop="@+id/emailLay"
             android:layout_marginTop="64dp"
-            android:textColorHint="#FFFFFF"
-            android:gravity="center">
-
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/userName"
-            android:layout_alignStart="@+id/userName"
-            android:layout_alignTop="@+id/userName"
-            android:layout_marginTop="64dp"
-            android:backgroundTint="@color/colorAccent"
-            android:drawableLeft="@drawable/ic_lock"
-            android:drawableStart="@drawable/ic_lock"
-            android:ems="10"
             android:gravity="center"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            android:textColorHint="#FFFFFF"
-            android:theme="@style/editTextColor" />
+            android:textColorHint="#FFFFFF">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/userName"
+                android:layout_alignStart="@+id/userName"
+                android:layout_alignTop="@+id/userName"
+                android:layout_marginTop="64dp"
+                android:backgroundTint="@color/colorAccent"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawableStart="@drawable/ic_lock"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColorHint="#FFFFFF" />
         </android.support.design.widget.TextInputLayout>
 
 
@@ -75,12 +73,12 @@
             android:id="@+id/buttonFrame"
             android:layout_width="260dp"
             android:layout_height="match_parent"
-            android:background="@drawable/login_button"
-            android:orientation="vertical"
             android:layout_above="@+id/forgotPassText"
             android:layout_alignLeft="@+id/login"
             android:layout_alignStart="@+id/login"
-            android:layout_alignTop="@+id/login">
+            android:layout_alignTop="@+id/login"
+            android:background="@drawable/login_button"
+            android:orientation="vertical">
 
         </FrameLayout>
 
@@ -88,13 +86,13 @@
             android:id="@+id/login"
             android:layout_width="260dp"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/passLay"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="28dp"
             android:background="?selectableItemBackground"
             android:text="@string/login"
-            android:textStyle="bold"
             android:textColor="@color/colorPrimaryDark"
-            android:layout_below="@+id/passLay"
-            android:layout_centerHorizontal="true" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/forgotPassText"
