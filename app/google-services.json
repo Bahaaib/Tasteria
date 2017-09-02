@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1091205389560",
+    "firebase_url": "https://tasteria-b755f.firebaseio.com",
+    "project_id": "tasteria-b755f",
+    "storage_bucket": "tasteria-b755f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091205389560:android:b447d72cd2825429",
+        "android_client_info": {
+          "package_name": "com.example.bahaaibrahim.tasteria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091205389560-919itdhhopbqgca3pvdmknd77384t28l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bahaaibrahim.tasteria",
+            "certificate_hash": "7eae8b796485f4ee5332eb5ab8072924084509ee"
+          }
+        },
+        {
+          "client_id": "1091205389560-3839s8minihiqh067u6q4jjlmda5omos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9OpO6YssMNotWsc2rkI_er1BCvocaR4g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091205389560-3839s8minihiqh067u6q4jjlmda5omos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

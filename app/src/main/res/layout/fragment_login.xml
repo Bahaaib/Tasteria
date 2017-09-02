@@ -23,7 +23,7 @@
             android:textColorHint="#FFFFFF">
 
             <EditText
-                android:id="@+id/userName"
+                android:id="@+id/loginMail"
                 android:layout_width="260dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -36,7 +36,8 @@
                 android:gravity="center"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
-                android:textColorHint="@color/colorAccent" />
+                android:textColorHint="@color/colorAccent"
+                />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -51,12 +52,12 @@
             android:textColorHint="#FFFFFF">
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/loginPassword"
                 android:layout_width="260dp"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/userName"
-                android:layout_alignStart="@+id/userName"
-                android:layout_alignTop="@+id/userName"
+                android:layout_alignLeft="@+id/loginMail"
+                android:layout_alignStart="@+id/loginMail"
+                android:layout_alignTop="@+id/loginMail"
                 android:layout_marginTop="64dp"
                 android:backgroundTint="@color/colorAccent"
                 android:drawableLeft="@drawable/ic_lock"
@@ -65,7 +66,8 @@
                 android:gravity="center"
                 android:hint="@string/password"
                 android:inputType="textPassword"
-                android:textColorHint="#FFFFFF" />
+                android:textColorHint="#FFFFFF"
+                />
         </android.support.design.widget.TextInputLayout>
 
 

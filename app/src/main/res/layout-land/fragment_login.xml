@@ -33,7 +33,7 @@
             android:textColorHint="#FFFFFF">
 
             <EditText
-                android:id="@+id/userName"
+                android:id="@+id/loginMail"
                 android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@+id/buttonFrame"
@@ -63,7 +63,7 @@
 
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/loginPassword"
                 android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@+id/userNameLay"
