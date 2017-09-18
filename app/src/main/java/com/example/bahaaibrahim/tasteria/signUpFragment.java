@@ -35,12 +35,7 @@ import java.util.ArrayList;
 
 
 public class signUpFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    ////////////////////////////////////////Fragment variables//////////////////////
     private TextView alredayMemText;
     private Button genderButtonMale, genderButtonFemale, signUpButton;
     private ArrayList ageRange;
@@ -55,35 +50,14 @@ public class signUpFragment extends Fragment {
     private boolean successfulSignUp;
 
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-
     public signUpFragment() {
         // Required empty public constructor
     }
 
 
-    // TODO: Rename and change types and number of parameters
-    public static signUpFragment newInstance(String param1, String param2) {
-        signUpFragment fragment = new signUpFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-
-
-        }
 
 
     }
@@ -275,7 +249,7 @@ public class signUpFragment extends Fragment {
 
     // validating Username
     private boolean isValidUsername(String userName) {
-        if (!TextUtils.isEmpty(userName) && userName.length() > 2) {
+        if (!TextUtils.isEmpty(userName) && (userName.length() > 2)) {
             return true;
         }
         return false;
@@ -302,9 +276,7 @@ public class signUpFragment extends Fragment {
                 .addOnCompleteListener(this.getActivity(), new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            //Sign Up..
-                        } else {
+                        if (!task.isSuccessful()) {
                             Toast.makeText(getActivity(), R.string.signUpFailed, Toast.LENGTH_LONG)
                                     .show();
                         }

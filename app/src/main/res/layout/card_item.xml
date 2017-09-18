@@ -1,0 +1,107 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    android:background="@color/colorBackgrounds"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="2dp">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/cardImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/primaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardImage"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/subText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/primaryText"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/spaceBar"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/subText"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorSpaces" />
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spaceBar"
+            android:layout_marginLeft="8dp"
+            android:isIndicator="true"
+            android:maxHeight="25dp"
+            android:maxWidth="25dp"
+            android:minHeight="25dp"
+            android:minWidth="25dp"
+            card_view:mrb_progressBackgroundTint="@color/colorPrimaryLight"
+            card_view:mrb_progressTint="@color/colorPrimaryLight"
+            card_view:mrb_secondaryProgressTint="@color/colorPrimaryLight" />
+
+        <TextView
+            android:id="@+id/rateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spaceBar"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/ratingBar"
+            android:layout_toRightOf="@+id/ratingBar"
+            android:textColor="@color/colorFab"
+            android:textSize="14sp" />
+
+
+        <com.like.LikeButton
+            android:id="@+id/favHeart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ratingBar"
+            android:layout_below="@+id/spaceBar"
+            app:icon_size="20dp"
+            app:icon_type="heart"
+            card_view:circle_end_color="@color/colorPrimary"
+            card_view:circle_start_color="@color/colorPrimaryLight"
+            card_view:dots_primary_color="@color/colorPrimaryLight"
+            card_view:dots_secondary_color="@color/colorPrimary"
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

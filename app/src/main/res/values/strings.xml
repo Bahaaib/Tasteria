@@ -31,5 +31,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="backPressExit">Press Back again to exit</string>
 
+    <!-- Main Activity -->
+    <string name="nearby">Nearby</string>
+    <string name="favorite">Favorite</string>
+    <string name="explore">Explore</string>
+
 
 </resources>

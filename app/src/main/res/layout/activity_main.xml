@@ -1,34 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/placesHolder"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp">
-
+    android:layout_height="match_parent">
 
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.bahaaibrahim.tasteria.ProfileFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </fragment>
-
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp" />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="start"
+        app:elevation="8dp"
+        android:background="@android:color/white"
+        app:itemBackground="@color/colorAccent"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:itemTextColor="@drawable/nav_item_color_state"
+        app:menu="@menu/bottom_nav_items" />
 
 
 </RelativeLayout>

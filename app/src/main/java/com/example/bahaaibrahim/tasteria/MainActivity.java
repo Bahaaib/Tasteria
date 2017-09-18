@@ -3,7 +3,10 @@ package com.example.bahaaibrahim.tasteria;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,12 +19,33 @@ public class MainActivity extends AppCompatActivity {
         }
     };
     private Toast backPressToast;
+    private BottomNavigationView bottomNavigationView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        bottomNavigationView = (BottomNavigationView)findViewById(R.id.bottomNav);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId()){
+                    case R.id.nearby:
+                        Toast.makeText(getApplicationContext(), "Show Nearby places", Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.favorite:
+                        Toast.makeText(getApplicationContext(), "Show favorite places", Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.explore:
+                        Toast.makeText(getApplicationContext(), "Explore places", Toast.LENGTH_LONG).show();
+                        break;
+                }
+                return true;
+            }
+        });
 
     }
 
